@@ -1,0 +1,8 @@
+proxy:
+  build: .
+  links:
+    - nginx
+  ports:
+    - 9001:4180
+nginx:
+  image: nginx
